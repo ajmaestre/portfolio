@@ -1,0 +1,212 @@
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 12rem;
+    background: url(../../assets/images/digital-gc.jpg);
+    background-size: cover;
+    max-width: 100vw;
+    min-height: 100vh;
+}
+
+.text {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: .2rem;
+    background-color: black;
+    filter: opacity(80%);
+    border-radius: .5rem;
+    margin-bottom: 4rem;
+}
+
+.content {
+    z-index: 1;
+    padding: 2rem;
+}
+
+.charge {
+    width: 15rem;
+    border-radius: .5rem;
+    padding: .2rem;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+    color: #000000;
+    font-size: .9rem;
+    font-weight: bold;
+    background: white;
+    filter: opacity(80%);
+    display: flex;
+    align-items: center;
+}
+
+.charge img {
+    width: 1.5rem;
+    margin-right: 1rem;
+    background: white;
+}
+
+.info {
+    border: none;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 0;
+    margin-bottom: 4rem;
+    background-color: transparent;
+}
+
+.h3 {
+    text-align: left;
+    padding-right: 3rem;
+    font-weight: normal;
+    background-color: transparent;
+    font-size: 1rem;
+}
+
+.div-icon {
+    position: absolute;
+    width: 12rem;
+    right: 5rem;
+    bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-style: italic;
+    height: 4rem;
+}
+
+.icon {
+    font-size: 2rem;
+    margin-right: .5rem;
+    font-weight: bold;
+}
+
+.fondo {
+    position: absolute;
+    left: 0rem;
+    width: 60rem;
+    height: 20rem;
+    background-color: rgb(100, 100, 100);
+    background: linear-gradient(180deg, rgb(1, 85, 97) 0%, rgba(1, 85, 97, 1) 35%, rgba(1, 85, 97, 1) 100%);
+    box-shadow: 0 0 20px rgb(50, 50, 50);
+    filter: blur(20px);
+    animation: rotat 10s infinite ease-in-out;
+}
+
+.foto {
+    width: 100%;
+    margin-right: 3rem;
+}
+
+.foto img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+@keyframes rotat {
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .container {
+        max-width: 100vw;
+        padding: 2rem 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text {
+        padding-right: .5rem;
+    }
+
+    .content {
+        z-index: 1;
+        padding-left: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .charge {
+        width: 100%;
+        border-radius: .2rem;
+        font-size: .7rem;
+        padding-right: 1rem;
+    }
+
+    .charge img {
+        width: 1rem;
+        margin-right: .5rem;
+    }
+
+    .info {
+        border: none;
+        padding: .5rem;
+        padding-bottom: 1rem;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .foto {
+        width: 50%;
+        margin-bottom: 2rem;
+        margin-right: 0;
+    }
+
+    .foto img {
+        width: 100%;
+    }
+
+    .h3 {
+        padding-right: 3rem;
+        font-size: .9rem;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .div-icon {
+        position: inherit;
+        width: auto;
+        height: auto;
+        margin-top: 1.5rem;
+    }
+
+    .icon {
+        font-size: 1.4rem;
+        margin-right: .2rem;
+        font-weight: bold;
+    }
+
+    h3 {
+        font-size: .9rem;
+    }
+
+    .fondo {
+        width: 100%;
+    }
+
+}

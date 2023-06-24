@@ -1,0 +1,37 @@
+
+<div class="nav" data-aos="fade-down">
+
+    <div class="logo">
+        <h2>AJMaster</h2>
+        <a (click)="showMenu()"><img src="../../assets/images/menu.svg" class="icon" alt=""></a>
+    </div>
+
+    <div class="links" *ngIf="menu" data-aos="fade-right">
+        <div class="pages">
+            <a [routerLink]='"."' fragment="home" routerLinkActive="active">Home</a>
+            <a [routerLink]='"."' fragment="work" routerLinkActive="active">Work</a>
+            <a [routerLink]='"."' fragment="about" routerLinkActive="active">About</a>
+            <a [routerLink]='"."' fragment="skill" routerLinkActive="active">Skill</a>
+            <a [routerLink]='"."' fragment="contact" routerLinkActive="active">Contact</a>
+        </div>
+    
+        <div class="setting">
+            <a (click)="changeLanguaje()">Spanish</a>
+            <a (click)="changeTheme()">Light theme</a>
+        </div>
+    </div>
+
+    <div class="pages max-width">
+        <a [routerLink]='"."' fragment="home" routerLinkActive="active">Home</a>
+        <a [routerLink]='"."' fragment="work" routerLinkActive="active">Work</a>
+        <a [routerLink]='"."' fragment="about" routerLinkActive="active">About</a>
+        <a [routerLink]='"."' fragment="skill" routerLinkActive="active">Skill</a>
+        <a [routerLink]='"."' fragment="contact" routerLinkActive="active">Contact</a>
+    </div>
+
+    <div class="setting max-width">
+        <a (click)="changeLanguaje()">Spanish</a>
+        <a (click)="changeTheme()">Light theme</a>
+    </div>
+
+</div>
