@@ -107,12 +107,11 @@ h1 {
 
 .foto {
     width: 100%;
-    margin-right: 3rem;
-}
-
-.foto img {
-    width: 100%;
     border-radius: 50%;
+    margin-right: 3rem;
+    height: 15rem;
+    background: url(../../assets/images/foto.jpg);
+    background-size: cover;
 }
 
 @keyframes rotat {
@@ -174,6 +173,7 @@ h1 {
         width: 50%;
         margin-bottom: 2rem;
         margin-right: 0;
+        height: 10rem;
     }
 
     .foto img {
