@@ -16,3 +16,43 @@ body{
     padding: 0;
     margin: 0;
 }
+
+@media (max-width: 1000px) {
+
+    body{
+        padding: 0;
+        margin: 0;
+        max-width: 100vw;
+    }
+    
+}
+
+@media (max-width: 728px) {
+
+    body{
+        padding: 0;
+        margin: 0;
+        max-width: 100vw;
+    }
+    
+}
+
+@media (max-width: 688px) {
+
+    body{
+        padding: 0;
+        margin: 0;
+        max-width: 100vw;
+    }
+    
+}
+
+@media (min-width: 688px) {
+
+    body{
+        padding: 0;
+        margin: 0;
+        max-width: 100vw;
+    }
+    
+}

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ChangeServiceService } from '../change-service.service';
 
 @Component({
   selector: 'app-nav',
@@ -9,18 +10,18 @@ export class NavComponent implements OnInit {
 
   menu: boolean = false;
 
-  constructor() { }
+  constructor(public changeService: ChangeServiceService) { }
 
   ngOnInit(): void {
     
   }
 
   changeLanguaje(){
-
-  }
-
-  changeTheme(){
-
+    if(this.changeService.changeLanguage){
+      this.changeService.changeLanguage = false;
+    }else{
+      this.changeService.changeLanguage = true
+    }
   }
 
   showMenu(){

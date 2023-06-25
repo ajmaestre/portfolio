@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ChangeServiceService } from '../change-service.service';
 
 @Component({
   selector: 'app-skill',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillComponent implements OnInit {
 
-  constructor() { }
+  constructor(public changeService: ChangeServiceService) { }
 
   ngOnInit(): void {
   }

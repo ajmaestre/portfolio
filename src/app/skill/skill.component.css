@@ -86,8 +86,8 @@ h1 {
     justify-content: center;
 }
 
-img {
-    width: 30%;
+svg {
+    width: 40%;
     background: transparent;
 }
 
@@ -141,6 +141,7 @@ img {
 
     .container {
         padding: 0;
+        max-width: 100vw;
     }
 
     h1 {
@@ -162,8 +163,32 @@ img {
         width: 100%;
     }
 
-    img {
+    svg {
         width: 20%;
     }
 
+}
+
+@media (max-width: 728px) {
+
+    .container{
+        max-width: 100vw;
+    }
+    
+}
+
+@media (max-width: 688px) {
+
+    .container{
+        max-width: 100vw;
+    }
+    
+}
+
+@media (min-width: 688px) {
+
+    .container{
+        max-width: 100vw;
+    }
+    
 }
