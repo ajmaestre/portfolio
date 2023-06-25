@@ -1,3 +1,20 @@
+
+## Descripción
+
+Hola, mi nombre es Alexander y este es mi portfolio. Esta desarrollado en el framework Angular. Mi enfoque se centra en el diseño responsivo, la usabilidad y la optimización del rendimiento. Aquí, te invito a explorar los proyectos en los que he trabajado, demostrando mi habilidad para crear experiencias de usuario impactantes. ¡Estoy emocionado de seguir aprendiendo y creciendo en este apasionante campo del desarrollo web!"
+
+## Autor
+**ALEXANDER MAESTRE TORRES**
+
+* [LinkedIn](https://www.linkedin.com/in/ajmaestre/)
+* [Portfolio web](https://ajmaestre.github.io/portfolio/home)
+
+## Ver ejemplo en vivo
+- [ENLACEGITHUBPAGES](https://ajmaestre.github.io/portfolio/home)
+
+## Contacto
+- [EMAIL](ajmaestretorres@gmail.com)
+
 # Portfolio
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.1.
