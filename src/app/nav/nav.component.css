@@ -41,6 +41,7 @@ a {
 
 a:hover {
     transform: scale(1.2);
+    border-bottom: .2rem solid rgb(10, 85, 97);
 }
 
 .setting {
