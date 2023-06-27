@@ -1,9 +1,9 @@
-<div class="container">
+<div class="container" data-aos="fade-right">
     
-    <h1 data-aos="fade-up" *ngIf="!changeService.changeLanguage">About</h1>
-    <h1 data-aos="fade-up" *ngIf="changeService.changeLanguage">Sobre mí</h1>
+    <h1 *ngIf="!changeService.changeLanguage">About</h1>
+    <h1 *ngIf="changeService.changeLanguage">Sobre mí</h1>
 
-    <div class="text" data-aos="fade-left">
+    <div class="text">
 
         <div class="fondo"></div>
 
@@ -21,26 +21,45 @@
                 Perfil
             </p>
             <div class="info">
-                <div class="foto">
-                    <!-- <img src="../../assets/images/foto.jpg" alt=""> -->
-                </div>
+
+                <div class="foto"></div>
+
                 <p class="h3" *ngIf="!changeService.changeLanguage">
-                    I'm a system engineer student with academic experience in Frontend developing
-                    and a specialized focus in creating attractive, functional web interfaces. 
-                    I have solid knowledge in HTML, CSS and JavaScript, as well as in Angular Framework.
-                    My objective is use my technique skills to design and develop high quality user experiences,
-                    focus in usability and efficiency.
+                    <span>
+                        I'm a system engineer student with academic 
+                        experience in Frontend developing
+                        and a specialized focus in creating 
+                        attractive, functional web interfaces. 
+                    </span>
+                    <span>
+                        I have solid knowledge in HTML, CSS and 
+                        JavaScript, as well as in Angular Framework.
+                    </span>
+                    <span>
+                        My objective is use my technique skills 
+                        to design and develop high quality user experiences,
+                        focus in usability and efficiency.
+                    </span>
                 </p>
+
                 <p class="h3" *ngIf="changeService.changeLanguage">
-                    Soy un estudiante de ingeniería de sistemas
-                    con experiencia académica en desarrollo Frontend
-                    y un enfoque especializado en la creación de interfaces web
-                    atractivas y funcionales. Poseo conocimientos sólidos en HTML,
-                    CSS y JavaScript, así como experiencia en el Framework Angular.
-                    Mi objetivo es utilizar mis habilidades técnicas para diseñar
-                    y desarrollar experiencias de usuario de alta calidad,
-                    centrándome en la usabilidad y la eficiencia.
+                    <span>
+                        Soy un estudiante de ingeniería de sistemas
+                        con experiencia académica en desarrollo Frontend
+                        y un enfoque especializado en la creación de interfaces web
+                        atractivas y funcionales.
+                    </span>
+                    <span>
+                        Poseo conocimientos sólidos en HTML,
+                        CSS y JavaScript, así como experiencia en el Framework Angular.
+                    </span>
+                    <span>
+                        Mi objetivo es utilizar mis habilidades técnicas para diseñar
+                        y desarrollar experiencias de usuario de alta calidad,
+                        centrándome en la usabilidad y la eficiencia.
+                    </span>
                 </p>
+
             </div>
             <div class="div-icon">
                 <div class="icon">

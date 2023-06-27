@@ -8,9 +8,19 @@ import { ChangeServiceService } from '../change-service.service';
 })
 export class SkillComponent implements OnInit {
 
+  showMoreSkills: boolean = false;
+
   constructor(public changeService: ChangeServiceService) { }
 
   ngOnInit(): void {
+  }
+
+  showMore(){
+    if(this.showMoreSkills){
+      this.showMoreSkills = false;
+    }else{
+      this.showMoreSkills = true;
+    }
   }
 
 }

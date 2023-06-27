@@ -47,7 +47,8 @@
         </div>
 
         <div class="setting">
-            <a (click)="changeLanguaje()">Spanish</a>
+            <a (click)="changeLanguaje()" *ngIf="changeService.changeLanguage">Inglés</a>
+            <a (click)="changeLanguaje()" *ngIf="!changeService.changeLanguage">Spanish</a>
         </div>
     </div>
 

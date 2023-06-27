@@ -1,0 +1,7 @@
+{
+    "/api/*": {
+        "target": "https://emailapi-6kot.onrender.com",
+        "secure": false,
+        "logLevel": "debug"
+    }
+}
