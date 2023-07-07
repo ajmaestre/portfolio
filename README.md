@@ -1,7 +1,30 @@
 
-## Descripción
+## Descripción (Español)
 
 Hola, mi nombre es Alexander y este es mi portfolio. Esta desarrollado en el framework Angular. Mi enfoque se centra en el diseño responsivo, la usabilidad y la optimización del rendimiento. Aquí, te invito a explorar los proyectos en los que he trabajado, demostrando mi habilidad para crear experiencias de usuario impactantes. ¡Estoy emocionado de seguir aprendiendo y creciendo en este apasionante campo del desarrollo web!"
+
+![Portfolio-Home](/src/assets/images-readme/home.png)
+
+En el podrás encontrar descritas mis habilidades en tecnologías tales como HTML5, CSS3, JavaScript, Typescript y el Framework Angular. También podrás encontrar una breve descripción sobre mí y algunos de los proyectos en los que he trabajado.
+
+![Portfolio-Skills](/src/assets/images-readme/skill.png)
+
+![Portfolio-Skills](/src/assets/images-readme/work.png)
+
+
+## Description (English)
+
+Hi, my name is Alexander and this is my portfolio. It´s built in Angular Framework. My focus is centered in responsive design, usability and performance optimization. Here, i invite you to explore the projects where i have worked, demonstrating my skill to create amazing user experience. ¡I´m exited to continue learning and growing in this amazing field of web development!"
+
+![Portfolio-Home](/src/assets/images-readme/home.png)
+
+In it you could find described my skills in technologies as HTML5, CSS3, JavaScript, Typescript and Angular Framework. Also, you could find a little description about me and some of projects where i have worked.
+
+![Portfolio-Skills](/src/assets/images-readme/skill.png)
+
+![Portfolio-Skills](/src/assets/images-readme/work.png)
+
+
 
 ## Autor
 **ALEXANDER MAESTRE TORRES**

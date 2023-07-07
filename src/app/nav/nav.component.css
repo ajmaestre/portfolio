@@ -35,13 +35,12 @@ a {
     text-decoration: none;
     font-weight: bold;
     cursor: pointer;
-    transition: 1s;
+    transition: .5s;
     background: transparent;
 }
 
 a:hover {
-    transform: scale(1.2);
-    border-bottom: .2rem solid rgb(10, 85, 97);
+    color: green;
 }
 
 .setting {

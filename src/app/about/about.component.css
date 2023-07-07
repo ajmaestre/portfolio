@@ -18,7 +18,7 @@
     position: relative;
     padding: .2rem;
     background-color: black;
-    filter: opacity(80%);
+    filter: opacity(90%);
     border-radius: .5rem;
     margin-bottom: 4rem;
 }
@@ -61,7 +61,7 @@
 
 h1 {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding: 0;
     margin-bottom: 4rem;
     background-color: transparent;
@@ -114,10 +114,10 @@ h1 {
 }
 
 .foto {
-    width: 40%;
+    width: 20rem;
+    height: 12rem;
     border-radius: 50%;
     margin-right: 3rem;
-    height: 15rem;
     background: url(../../assets/images/foto.jpg);
     background-size: cover;
 }

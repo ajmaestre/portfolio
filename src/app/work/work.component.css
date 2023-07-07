@@ -13,9 +13,9 @@
 
 h1 {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding: 0;
-    margin: 4rem 0;
+    margin: 4rem 0 2rem 0;
     background-color: transparent;
 }
 
@@ -30,7 +30,7 @@ h1 {
 
 .card {
     width: 20%;
-    height: 22rem;
+    height: 25rem;
     background-color: black;
     filter: opacity(80%);
     margin: 2rem 3rem;
@@ -133,12 +133,12 @@ svg {
 }
 
 .title {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
 .text {
-    font-size: .9rem;
+    font-size: .8rem;
 }
 
 p.text{
@@ -147,14 +147,10 @@ p.text{
 
 .links {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 100%;
-}
-
-.links a{
-    margin: 0;
 }
 
 .links a svg{
@@ -163,13 +159,29 @@ p.text{
 
 .contacts {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
+    padding: .2rem 0;
+}
+
+.link-g{
+    background: green;
+    width: 80%;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+}
+
+.link-gp{
+    background: blue;
+    width: 80%;
+    border-radius: .5rem;
 }
 
 .tooltip {
     position: relative;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-bottom: 1px dotted black;
 }
 

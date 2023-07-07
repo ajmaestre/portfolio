@@ -92,7 +92,10 @@
 
 .mark{
     display: flex;
+    justify-content: center;
+    align-items: flex-start;
     flex-direction: row;
+    flex-wrap: wrap;
     font-weight: bold;
 }
 

@@ -64,7 +64,7 @@
 
         </div>
 
-        <div class="more" *ngIf="showMoreSkills" data-aos="fade-right">
+        <div class="more" data-aos="fade-right">
 
             <div class="card">
                 <div class="fondo"></div>
@@ -138,17 +138,6 @@
 
         </div>
 
-    </div>
-
-    <div class="div-more">
-        <a (click)="showMore()" *ngIf="changeService.changeLanguage">
-            <span *ngIf="!showMoreSkills">Más</span>
-            <span *ngIf="showMoreSkills">Menos</span>
-        </a>
-        <a (click)="showMore()" *ngIf="!changeService.changeLanguage">
-            <span *ngIf="!showMoreSkills">More</span>
-            <span *ngIf="showMoreSkills">Less</span>
-        </a>
     </div>
 
 </div>

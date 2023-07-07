@@ -13,7 +13,7 @@
 
 h1 {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding: 0;
     margin-bottom: 2rem;
     background-color: transparent;
@@ -29,7 +29,7 @@ h1 {
     margin-bottom: 41px;
     padding: .2rem;
     background-color: black;
-    filter: opacity(80%);
+    filter: opacity(90%);
     position: relative;
     overflow: hidden;
 }
@@ -54,7 +54,7 @@ h1 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     box-shadow: 2rem 2rem 4rem #00000021;
     padding: 16px;
     border-radius: .5rem;
@@ -62,9 +62,10 @@ h1 {
 
 .links {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 svg{
@@ -123,10 +124,10 @@ svg{
 
 .contact-us-body .form-body form button {
     margin: 2rem 0;
-    width: 12rem;
+    width: 15rem;
     height: 2.4rem;
     border-radius: .5rem;
-    background: rgb(10, 85, 97);
+    background: green;
     font-size: larger;
     font-weight: bold;
     cursor: pointer;
@@ -137,7 +138,7 @@ svg{
 
 .contact-us-body .form-body form button:hover {
     background: rgb(8, 63, 71);
-    transform: scale(1.1);
+    transform: scale(.9);
 }
 
 .tooltip {
@@ -149,30 +150,19 @@ svg{
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
-    background-color: #fff;
-    color: #555;
+    background-color: blue;
+    color: #fff;
     font-weight: bold;
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
     position: absolute;
     z-index: 1;
-    bottom: 125%;
-    left: 50%;
+    bottom: 25%;
+    left: -150%;
     margin-left: -60px;
     opacity: 0;
     transition: opacity 0.3s;
-}
-
-.tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
 }
 
 .tooltip:hover .tooltiptext {
@@ -215,6 +205,11 @@ svg{
         flex-direction: row;
         align-items: center;
         justify-content: center;
+    }
+
+    .tooltip:hover .tooltiptext {
+        visibility: hidden;
+        opacity: 1;
     }
 
     .contact-us-body .form-body form input {
