@@ -4,7 +4,7 @@
     justify-content: center;
     flex-direction: column;
     padding: 0 12rem;
-    background: url(../../assets/images/digital-gc.jpg);
+    background: #242932;
     background-size: cover;
     max-width: 100vw;
     min-height: 100vh;

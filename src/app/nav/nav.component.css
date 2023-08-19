@@ -43,6 +43,10 @@ a:hover {
     color: green;
 }
 
+.active{
+    color: rgb(35, 202, 35);
+}
+
 .setting {
     width: auto;
     height: auto;
