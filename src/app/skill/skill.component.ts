@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ChangeServiceService } from '../change-service.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-skill',
@@ -8,7 +8,7 @@ import { ChangeServiceService } from '../change-service.service';
 })
 export class SkillComponent implements OnInit {
 
-  constructor(public changeService: ChangeServiceService) { }
+  constructor(private translate: TranslateService) { }
 
   ngOnInit(): void {
   }

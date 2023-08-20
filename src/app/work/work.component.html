@@ -1,7 +1,6 @@
 <div class="container">
 
-    <h1 data-aos="fade-up" *ngIf="!changeService.changeLanguage">Projects</h1>
-    <h1 data-aos="fade-up" *ngIf="changeService.changeLanguage">Proyectos</h1>
+    <h1 data-aos="fade-up">{{"title-project" | translate}}</h1>
 
     <div class="cards">
 
@@ -19,14 +18,8 @@
                 </div>
                 <div class="content">
                     <p class="title">CoffeeApp</p>
-                    <p class="text" *ngIf="!changeService.changeLanguage">
-                        A web application that was built using the CRISP DM Methodology
-                        to develop a prediction model for the coffee production in Colombia.
-                    </p>
-                    <p class="text" *ngIf="changeService.changeLanguage">
-                        Una aplicación web donde se aplica CRISP DM
-                        para el desarrollo de un modelo de predicción
-                        para la producción de café en Colombia.
+                    <p class="text">
+                        {{"coffeeapp-description" | translate}}
                     </p>
                 </div>
                 <div class="links">
@@ -57,15 +50,8 @@
                 </div>
                 <div class="content">
                     <p class="title">FrontendWebsite</p>
-                    <p class="text" *ngIf="!changeService.changeLanguage">
-                        A web application to provide services in layaout
-                        of web pages, with adaptative design to different
-                        dispositives and a friendly view.
-                    </p>
-                    <p class="text" *ngIf="changeService.changeLanguage">
-                        Una aplicación web para ofrecer servicios de
-                        maquetación de páginas web, con diseño adaptativo
-                        a diferentes dispositivos y una vista amigable.
+                    <p class="text">
+                        {{"frontendapp-description" | translate}}
                     </p>
                 </div>
                 <div class="links">
@@ -96,13 +82,8 @@
                 </div>
                 <div class="content">
                     <p class="title">NominaUPC</p>
-                    <p class="text" *ngIf="!changeService.changeLanguage">
-                        A simple web application that was built to simulate
-                        the professors payment at University Popular of Cesar.
-                    </p>
-                    <p class="text" *ngIf="changeService.changeLanguage">
-                        Una aplicación simple que permite simular la nómina
-                        de los docentes vinculados a la universidad Popular del Cesar.
+                    <p class="text">
+                        {{"nominaapp-description" | translate}}
                     </p>
                 </div>
                 <div class="links">
@@ -132,13 +113,8 @@
                 </div>
                 <div class="content">
                     <p class="title">TravelWebsite</p>
-                    <p class="text" *ngIf="!changeService.changeLanguage">
-                        A web application that simulate a web platform
-                        to provide travel services around the world.
-                    </p>
-                    <p class="text" *ngIf="changeService.changeLanguage">
-                        Una aplicación web que simula una plataforma
-                        para brindar servicios de viajes alrededor del mundo.
+                    <p class="text">
+                        {{"travelapp-description" | translate}}
                     </p>
                 </div>
                 <div class="links">
@@ -168,11 +144,8 @@
                 </div>
                 <div class="content">
                     <p class="title">Restry</p>
-                    <p class="text" *ngIf="!changeService.changeLanguage">
-                        A simple web application to test API REST responses.
-                    </p>
-                    <p class="text" *ngIf="changeService.changeLanguage">
-                        Una simple aplicación we para testear las respuestas de API REST.
+                    <p class="text">
+                        {{"restryapp-description" | translate}}
                     </p>
                 </div>
                 <div class="links">
@@ -204,12 +177,8 @@
                 </div>
                 <div class="content">
                     <p class="title">Reserhab</p>
-                    <p class="text" *ngIf="!changeService.changeLanguage">
-                        A web application to reserve rooms in Valledupar city in Colombia.
-                    </p>
-                    <p class="text" *ngIf="changeService.changeLanguage">
-                        Una plataforma web para la reserva de habitaciones
-                        en la ciudad de Valledupar en Colombia.
+                    <p class="text">
+                        {{"reserhabapp-description" | translate}}
                     </p>
                 </div>
                 <div class="links">

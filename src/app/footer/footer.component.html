@@ -17,36 +17,18 @@
                 </div>
             </div>
 
-            <div class="sub-section sub-text" *ngIf="!changeService.changeLanguage">
+            <div class="sub-section sub-text">
                 <p class="title">
-                    About me
+                    {{"foot-about-title" | translate}}
                 </p>
                 <p class="text">
-                    I'm a Frontend developer 
-                    with a specialized focus 
-                    on creating attractive 
-                    and functional web interfaces.
-                </p>
-            </div>
-
-            <div class="sub-section sub-text" *ngIf="changeService.changeLanguage">
-                <p class="title">
-                    Sobre mí
-                </p>
-                <p class="text">
-                    Yo soy un desarrollador Frontend con 
-                    un enfoque especializado en la 
-                    creación de interfaces web
-                    atractivas y funcionales.
+                    {{"foot-about-description" | translate}}
                 </p>
             </div>
 
             <div class="sub-section sub-text contacts-title">
-                <p class="title" *ngIf="!changeService.changeLanguage">
-                    Contact me
-                </p>
-                <p class="title" *ngIf="changeService.changeLanguage">
-                    Contáctame
+                <p class="title">
+                    {{"foot-contact-title" | translate}}
                 </p>
                 <div class="links">
                     <a href="https://wa.me/573044842422" target="_blank" class="text contacts">
@@ -163,49 +145,26 @@
 
         <div class="section foot">
             <div class="mark">
-                <a [routerLink]='"."' fragment="home" routerLinkActive="active" *ngIf="changeService.changeLanguage">
-                    Inicio
-                </a>
-                <a [routerLink]='"."' fragment="home" routerLinkActive="active" *ngIf="!changeService.changeLanguage">
-                    Home
+                <a [routerLink]='"."' fragment="home" routerLinkActive="active">
+                    {{"Home" | translate}}
                 </a>
                 <p>|</p>
-                <a [routerLink]='"."' fragment="work" routerLinkActive="active" *ngIf="changeService.changeLanguage">
-                    Proyectos
-                </a>
-                <a [routerLink]='"."' fragment="work" routerLinkActive="active" *ngIf="!changeService.changeLanguage">
-                    Work
+                <a [routerLink]='"."' fragment="work" routerLinkActive="active">
+                    {{"Work" | translate}}
                 </a>
                 <p>|</p>
-                <a [routerLink]='"."' fragment="about" routerLinkActive="active" *ngIf="changeService.changeLanguage">
-                    Sobre mí
-                </a>
-                <a [routerLink]='"."' fragment="about" routerLinkActive="active" *ngIf="!changeService.changeLanguage">
-                    About
+                <a [routerLink]='"."' fragment="about" routerLinkActive="active">
+                    {{"About" | translate}}
                 </a>
                 <p>|</p>
-                <a [routerLink]='"."' fragment="skill" routerLinkActive="active" *ngIf="changeService.changeLanguage">
-                    Habilidades
-                </a>
-                <a [routerLink]='"."' fragment="skill" routerLinkActive="active" *ngIf="!changeService.changeLanguage">
-                    Skill
+                <a [routerLink]='"."' fragment="skill" routerLinkActive="active">
+                    {{"Skill" | translate}}
                 </a>
                 <p>|</p>
-                <a [routerLink]='"."' fragment="contact" routerLinkActive="active" *ngIf="changeService.changeLanguage">
-                    Contacto
-                </a>
-                <a [routerLink]='"."' fragment="contact" routerLinkActive="active" *ngIf="!changeService.changeLanguage">
-                    Contact
+                <a [routerLink]='"."' fragment="contact" routerLinkActive="active">
+                    {{"Contact" | translate}}
                 </a>
                 
-            </div>
-            <div class="mark">
-                <a (click)="changeLanguaje()" *ngIf="changeService.changeLanguage">
-                    Inglés
-                </a>
-                <a (click)="changeLanguaje()" *ngIf="!changeService.changeLanguage">
-                    Spanish
-                </a>
             </div>
             <div class="mark">
                 <p class="text">© 2023 AJMaster</p>

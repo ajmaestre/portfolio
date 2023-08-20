@@ -1,7 +1,6 @@
 <div class="container" data-aos="fade-right">
 
-    <h1 *ngIf="!changeService.changeLanguage">Contact me</h1>
-    <h1 *ngIf="changeService.changeLanguage">Contáctame</h1>
+    <h1>{{"title-contact" | translate}}</h1>
 
     <div class="contact-us-body" id="contact">
         <div class="fondo"></div>
@@ -125,8 +124,7 @@
                     <input type="text" placeholder="Subject" formControlName="subject">
                 </div>
                 <textarea name="" id="" cols="30" rows="10" placeholder="Message" formControlName="message"></textarea>
-                <button type="submit" *ngIf="!changeService.changeLanguage" (click)="sendEmail()">Submit</button>
-                <button type="submit" *ngIf="changeService.changeLanguage" (click)="sendEmail()">Enviar</button>
+                <button type="submit" (click)="sendEmail()">{{"btn-submit" | translate}}</button>
             </form>
         </div>
     </div>

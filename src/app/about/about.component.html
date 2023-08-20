@@ -1,62 +1,31 @@
 <div class="container" data-aos="fade-right">
     
-    <h1 *ngIf="!changeService.changeLanguage">About</h1>
-    <h1 *ngIf="changeService.changeLanguage">Sobre mí</h1>
+    <h1>{{"title-about" | translate}}</h1>
 
     <div class="text">
 
         <div class="fondo"></div>
 
         <div class="content">
-            <p class="charge" *ngIf="!changeService.changeLanguage">
+            <p class="charge">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 14 14" fill="black">
                     <path d="M7,13 C3.6862915,13 1,10.3137085 1,7 C1,3.6862915 3.6862915,1 7,1 C10.3137085,1 13,3.6862915 13,7 C13,10.3137085 10.3137085,13 7,13 Z M7,3 C6.44771525,3 6,3.44771525 6,4 L6,7 C6,7.55228475 6.44771525,8 7,8 C7.55228475,8 8,7.55228475 8,7 L8,4 C8,3.44771525 7.55228475,3 7,3 Z M7,9 C6.44771525,9 6,9.44771525 6,10 C6,10.5522847 6.44771525,11 7,11 C7.55228475,11 8,10.5522847 8,10 C8,9.44771525 7.55228475,9 7,9 Z" transform="rotate(180 7 7)"/>
                 </svg>   
-                Profile
-            </p>
-            <p class="charge" *ngIf="changeService.changeLanguage">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 14 14" fill="black">
-                    <path d="M7,13 C3.6862915,13 1,10.3137085 1,7 C1,3.6862915 3.6862915,1 7,1 C10.3137085,1 13,3.6862915 13,7 C13,10.3137085 10.3137085,13 7,13 Z M7,3 C6.44771525,3 6,3.44771525 6,4 L6,7 C6,7.55228475 6.44771525,8 7,8 C7.55228475,8 8,7.55228475 8,7 L8,4 C8,3.44771525 7.55228475,3 7,3 Z M7,9 C6.44771525,9 6,9.44771525 6,10 C6,10.5522847 6.44771525,11 7,11 C7.55228475,11 8,10.5522847 8,10 C8,9.44771525 7.55228475,9 7,9 Z" transform="rotate(180 7 7)"/>
-                </svg>   
-                Perfil
+                {{"label-about" | translate}}
             </p>
             <div class="info">
 
                 <div class="foto"></div>
 
-                <p class="h3" *ngIf="!changeService.changeLanguage">
+                <p class="h3">
                     <span>
-                        I'm a system engineer student with academic 
-                        experience in Frontend developing
-                        and a specialized focus in creating 
-                        attractive, functional web interfaces. 
+                        {{"profile-about-one" | translate}}
                     </span>
                     <span>
-                        I have solid knowledge in HTML, CSS and 
-                        JavaScript, as well as in Angular Framework.
+                        {{"profile-about-two" | translate}}
                     </span>
                     <span>
-                        My objective is use my technique skills 
-                        to design and develop high quality user experiences,
-                        focus in usability and efficiency.
-                    </span>
-                </p>
-
-                <p class="h3" *ngIf="changeService.changeLanguage">
-                    <span>
-                        Soy un estudiante de ingeniería de sistemas
-                        con experiencia académica en desarrollo Frontend
-                        y un enfoque especializado en la creación de interfaces web
-                        atractivas y funcionales.
-                    </span>
-                    <span>
-                        Poseo conocimientos sólidos en HTML,
-                        CSS y JavaScript, así como experiencia en el Framework Angular.
-                    </span>
-                    <span>
-                        Mi objetivo es utilizar mis habilidades técnicas para diseñar
-                        y desarrollar experiencias de usuario de alta calidad,
-                        centrándome en la usabilidad y la eficiencia.
+                        {{"profile-about-three" | translate}}
                     </span>
                 </p>
 

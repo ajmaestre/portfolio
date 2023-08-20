@@ -13,82 +13,54 @@
 
     <div class="links" *ngIf="menu" data-aos="fade-right">
         <div class="pages">
-            <a [routerLink]='"."' fragment="home" routerLinkActive="active" *ngIf="changeService.changeLanguage">
-                Inicio
-            </a>
-            <a [routerLink]='"."' fragment="work" routerLinkActive="active" *ngIf="changeService.changeLanguage">
-                Proyectos
-            </a>
-            <a [routerLink]='"."' fragment="about" routerLinkActive="active" *ngIf="changeService.changeLanguage">
-                Sobre mí
-            </a>
-            <a [routerLink]='"."' fragment="skill" routerLinkActive="active" *ngIf="changeService.changeLanguage">
-                Habilidades
-            </a>
-            <a [routerLink]='"."' fragment="contact" routerLinkActive="active" *ngIf="changeService.changeLanguage">
-                Contacto
-            </a>
-
-            <a [routerLink]='"."' fragment="home" routerLinkActive="active" *ngIf="!changeService.changeLanguage!">
+            <a [routerLink]='"."' fragment="home" routerLinkActive="active">
                 Home
             </a>
-            <a [routerLink]='"."' fragment="work" routerLinkActive="active" *ngIf="!changeService.changeLanguage">
+            <a [routerLink]='"."' fragment="work" routerLinkActive="active">
                 Work
             </a>
-            <a [routerLink]='"."' fragment="about" routerLinkActive="active" *ngIf="!changeService.changeLanguage">
+            <a [routerLink]='"."' fragment="about" routerLinkActive="active">
                 About
             </a>
-            <a [routerLink]='"."' fragment="skill" routerLinkActive="active" *ngIf="!changeService.changeLanguage">
+            <a [routerLink]='"."' fragment="skill" routerLinkActive="active">
                 Skill
             </a>
-            <a [routerLink]='"."' fragment="contact" routerLinkActive="active" *ngIf="!changeService.changeLanguage">
+            <a [routerLink]='"."' fragment="contact" routerLinkActive="active">
                 Contact
             </a>
-        </div>
-
-        <div class="setting">
-            <a (click)="changeLanguaje()" *ngIf="changeService.changeLanguage">Inglés</a>
-            <a (click)="changeLanguaje()" *ngIf="!changeService.changeLanguage">Spanish</a>
         </div>
     </div>
 
     <div class="pages max-width">
-        <a [routerLink]='"."' fragment="home" routerLinkActive="active" *ngIf="changeService.changeLanguage">
-            Inicio
+        <a [routerLink]='"."' fragment="home" routerLinkActive="active">
+            {{"Home" | translate}}
         </a>
-        <a [routerLink]='"."' fragment="work" routerLinkActive="active" *ngIf="changeService.changeLanguage">
-            Proyectos
+        <a [routerLink]='"."' fragment="work" routerLinkActive="active">
+            {{"Work" | translate}}
         </a>
-        <a [routerLink]='"."' fragment="about" routerLinkActive="active" *ngIf="changeService.changeLanguage">
-            Sobre mí
+        <a [routerLink]='"."' fragment="about" routerLinkActive="active">
+            {{"About" | translate}}
         </a>
-        <a [routerLink]='"."' fragment="skill" routerLinkActive="active" *ngIf="changeService.changeLanguage">
-            Habilidades
+        <a [routerLink]='"."' fragment="skill" routerLinkActive="active">
+            {{"Skill" | translate}}
         </a>
-        <a [routerLink]='"."' fragment="contact" routerLinkActive="active" *ngIf="changeService.changeLanguage">
-            Contacto
-        </a>
-        
-        <a [routerLink]='"."' fragment="home" routerLinkActive="active" *ngIf="!changeService.changeLanguage">
-            Home
-        </a>
-        <a [routerLink]='"."' fragment="work" routerLinkActive="active" *ngIf="!changeService.changeLanguage">
-            Work
-        </a>
-        <a [routerLink]='"."' fragment="about" routerLinkActive="active" *ngIf="!changeService.changeLanguage">
-            About
-        </a>
-        <a [routerLink]='"."' fragment="skill" routerLinkActive="active" *ngIf="!changeService.changeLanguage">
-            Skill
-        </a>
-        <a [routerLink]='"."' fragment="contact" routerLinkActive="active" *ngIf="!changeService.changeLanguage">
-            Contact
+        <a [routerLink]='"."' fragment="contact" routerLinkActive="active">
+            {{"Contact" | translate}}
         </a>
     </div>
 
     <div class="setting max-width">
-        <a (click)="changeLanguaje()" *ngIf="changeService.changeLanguage">Inglés</a>
-        <a (click)="changeLanguaje()" *ngIf="!changeService.changeLanguage">Spanish</a>
+        <div class="lang">
+           <a (click)="showSubMenu()">{{"lang" | translate}}</a>
+        </div>
+        <ul class="ul" *ngIf="submenu">
+            <li class="li">
+                <a (click)="changeLanguaje('es')">{{"lang-es" | translate}}</a>
+            </li>
+            <li class="li">
+                <a (click)="changeLanguaje('en')">{{"lang-en" | translate}}</a>
+            </li>
+        </ul>
     </div>
 
 </div>

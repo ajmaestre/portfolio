@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ChangeServiceService } from '../change-service.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-footer',
@@ -8,18 +8,10 @@ import { ChangeServiceService } from '../change-service.service';
 })
 export class FooterComponent implements OnInit {
 
-  constructor(public changeService: ChangeServiceService) { }
+  constructor(private translate: TranslateService) { }
 
   ngOnInit(): void {
     
-  }
-
-  changeLanguaje(){
-    if(this.changeService.changeLanguage){
-      this.changeService.changeLanguage = false;
-    }else{
-      this.changeService.changeLanguage = true
-    }
   }
 
 }

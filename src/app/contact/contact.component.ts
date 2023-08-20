@@ -1,10 +1,10 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { ChangeServiceService } from '../change-service.service';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import * as Notiflix from 'notiflix';
 import { ContactService } from './contact.service';
 import { Subscription } from 'rxjs';
 import { IEmail } from '../interfaces/IEmail';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact',
@@ -17,7 +17,7 @@ export class ContactComponent implements OnInit, OnDestroy {
   emailSubscription!: Subscription;
   email_body!: IEmail;
 
-  constructor(public changeService: ChangeServiceService, private contactService: ContactService) { 
+  constructor(private contactService: ContactService, private translate: TranslateService) { 
     this.data = new FormGroup({
       email: new FormControl('', [Validators.required, Validators.email]),
       subject: new FormControl('', Validators.required),
@@ -45,12 +45,12 @@ export class ContactComponent implements OnInit, OnDestroy {
     });
     this.email_body = this.data.value;
     this.emailSubscription = this.contactService.sendMail(this.email_body).subscribe({
-      next: (res) =>{
+      next: (res: any) =>{
         Notiflix.Loading.remove(); 
         Notiflix.Notify.success('Mensaje enviado', { position: 'center-center', width: '12rem', });
         this.clearForm();
       },
-      error: (err) => {
+      error: (err: any) => {
         console.log(err);
       }
     }); 

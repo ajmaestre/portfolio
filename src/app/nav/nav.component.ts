@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ChangeServiceService } from '../change-service.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-nav',
@@ -9,19 +9,19 @@ import { ChangeServiceService } from '../change-service.service';
 export class NavComponent implements OnInit {
 
   menu: boolean = false;
+  submenu: boolean = false;
 
-  constructor(public changeService: ChangeServiceService) { }
+  constructor(private translate: TranslateService) { 
+    translate.setDefaultLang('es');
+    translate.use('es');
+  }
 
   ngOnInit(): void {
     
   }
 
-  changeLanguaje(){
-    if(this.changeService.changeLanguage){
-      this.changeService.changeLanguage = false;
-    }else{
-      this.changeService.changeLanguage = true
-    }
+  changeLanguaje(lang: string){
+    this.translate.use(lang);
   }
 
   showMenu(){
@@ -29,6 +29,14 @@ export class NavComponent implements OnInit {
       this.menu = false;
     }else{
       this.menu = true;
+    }
+  }
+
+  showSubMenu(){
+    if(this.submenu){
+      this.submenu = false;
+    }else{
+      this.submenu = true;
     }
   }
 
