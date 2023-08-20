@@ -1,0 +1,32 @@
+
+
+{
+    "lang": "Idioma",
+    "lang-es": "Español",
+    "lang-en": "Inglés",
+    "title": "Desarrollador Frontend",
+    "resume": "Hola, Yo soy Alexander Maestre - un desarrollador Frontend con un enfoque especializado en la creación de interfaces web atractivas y funcionales.",
+    "Home": "Inicio",
+    "Work": "Proyectos",
+    "About": "Sobre mí",
+    "Skill": "Habilidades",
+    "Contact": "Contacto",
+    "title-project": "Proyectos",
+    "coffeeapp-description": "Una aplicación web donde se aplica CRISP DM para el desarrollo de un modelo de predicción para la producción de café en Colombia.",
+    "frontendapp-description": "Una aplicación web para ofrecer servicios de maquetación de páginas web, con diseño adaptativo a diferentes dispositivos y una vista amigable.",
+    "nominaapp-description": "Una aplicación simple que permite simular la nómina de los docentes vinculados a la universidad Popular del Cesar.",
+    "travelapp-description": "Una aplicación web que simula una plataforma para brindar servicios de viajes alrededor del mundo.",
+    "restryapp-description": "Una simple aplicación we para testear las respuestas de API REST.",
+    "reserhabapp-description": "Una plataforma web para la reserva de habitaciones en la ciudad de Valledupar en Colombia.",
+    "title-about": "Sobre mí",
+    "label-about": "Perfil",
+    "profile-about-one": "Soy un estudiante de ingeniería de sistemas con experiencia académica en desarrollo Frontend y un enfoque especializado en la creación de interfaces web atractivas y funcionales.",
+    "profile-about-two": "Poseo conocimientos sólidos en HTML, CSS y JavaScript, así como experiencia en el Framework Angular.",
+    "profile-about-three": "Mi objetivo es utilizar mis habilidades técnicas para diseñar y desarrollar experiencias de usuario de alta calidad, centrándome en la usabilidad y la eficiencia.",
+    "title-skill": "Habilidades",
+    "title-contact": "Contáctame",
+    "btn-submit": "Enviar",
+    "foot-about-title": "Sobre mí",
+    "foot-about-description": "Yo soy un desarrollador Frontend con un enfoque especializado en la creación de interfaces webatractivas y funcionales.",
+    "foot-contact-title": "Contáctame"
+}
