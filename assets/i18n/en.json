@@ -4,7 +4,7 @@
     "lang-en": "English",
     "lang-es": "Spanish",
     "title": "Frontend developer",
-    "resume": "Hi, I'm Alexander Maestre - a Frontend developer with a specialized focus on creating attractive and functional web interfaces.",
+    "resume": "Hi, I'm Alexander Maestre, a Frontend developer with a specialized focus on creating attractive and functional web interfaces.",
     "Home": "Home",
     "Work": "Work",
     "About": "About",
@@ -26,5 +26,6 @@
     "title-contact": "Contact me",
     "btn-submit": "Submit",
     "foot-about-title": "About me",
-    "foot-about-description": "I'm a Frontend developer with a specialized focus on creating attractive and functional web interfaces."
+    "foot-about-description": "I'm a Frontend developer with a specialized focus on creating attractive and functional web interfaces.",
+    "foot-contact-title": "Contact me"
 }
