@@ -7,7 +7,6 @@
     background: #242932;
     background-size: cover;
     filter: opacity(80%);
-    max-width: 100vw;
     min-height: 100vh;
 }
 
@@ -185,11 +184,10 @@ svg {
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
 
     .container {
         padding: 0;
-        max-width: 100vw;
     }
 
     h1 {
@@ -237,26 +235,34 @@ svg {
 
 }
 
-@media (max-width: 728px) {
+@media (max-width: 960px) {
 
     .container{
-        max-width: 100vw;
+        margin: 0;
     }
     
 }
 
-@media (max-width: 688px) {
+@media (max-width: 768px) {
 
     .container{
-        max-width: 100vw;
+        margin: 0;
     }
     
 }
 
-@media (min-width: 688px) {
+@media (max-width: 480px) {
 
     .container{
-        max-width: 100vw;
+        margin: 0;
+    }
+    
+}
+
+@media (max-width: 320px) {
+
+    .container{
+        margin: 0;
     }
     
 }

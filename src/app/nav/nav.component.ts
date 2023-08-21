@@ -8,8 +8,8 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class NavComponent implements OnInit {
 
-  menu: boolean = false;
-  submenu: boolean = false;
+  menu: string = 'pages show';
+  submenu: string = 'ul';
 
   constructor(private translate: TranslateService) { 
     translate.setDefaultLang('es');
@@ -25,18 +25,20 @@ export class NavComponent implements OnInit {
   }
 
   showMenu(){
-    if(this.menu){
-      this.menu = false;
+    if(this.menu == 'pages'){
+      this.menu = 'pages show';
+      this.submenu = 'ul';
     }else{
-      this.menu = true;
+      this.menu = 'pages';
+      this.submenu = 'ul show-submenu';
     }
   }
 
   showSubMenu(){
-    if(this.submenu){
-      this.submenu = false;
+    if(this.submenu == 'ul'){
+      this.submenu = 'ul show-submenu';
     }else{
-      this.submenu = true;
+      this.submenu = 'ul';
     }
   }
 

@@ -11,27 +11,7 @@
         </a>
     </div>
 
-    <div class="links" *ngIf="menu" data-aos="fade-right">
-        <div class="pages">
-            <a [routerLink]='"."' fragment="home" routerLinkActive="active">
-                Home
-            </a>
-            <a [routerLink]='"."' fragment="work" routerLinkActive="active">
-                Work
-            </a>
-            <a [routerLink]='"."' fragment="about" routerLinkActive="active">
-                About
-            </a>
-            <a [routerLink]='"."' fragment="skill" routerLinkActive="active">
-                Skill
-            </a>
-            <a [routerLink]='"."' fragment="contact" routerLinkActive="active">
-                Contact
-            </a>
-        </div>
-    </div>
-
-    <div class="pages max-width">
+    <div [class]="menu">
         <a [routerLink]='"."' fragment="home" routerLinkActive="active">
             {{"Home" | translate}}
         </a>
@@ -49,11 +29,11 @@
         </a>
     </div>
 
-    <div class="setting max-width">
+    <div class="setting">
         <div class="lang">
            <a (click)="showSubMenu()">{{"lang" | translate}}</a>
         </div>
-        <ul class="ul" *ngIf="submenu">
+        <ul [class]="submenu">
             <li class="li">
                 <a (click)="changeLanguaje('es')">{{"lang-es" | translate}}</a>
             </li>
