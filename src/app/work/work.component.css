@@ -268,8 +268,24 @@ p.text{
     }
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 320px) {
+    .container{
+        margin: 0;
+    }
+}
 
+@media screen and (max-width: 480px) {
+    .container{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .container{
+        margin: 0;
+    }
+    
     h1 {
         font-size: 1.5rem;
         margin: 2rem 0;
@@ -291,37 +307,19 @@ p.text{
     svg {
         width: 20%;
     }
-
-}
-
-@media (max-width: 960px) {
-
-    .container{
-        margin: 0;
-    }
     
 }
 
-@media (max-width: 768px) {
-
+@media screen and (max-width: 960px) {
     .container{
         margin: 0;
     }
-    
 }
 
-@media (max-width: 480px) {
-
+@media screen and (max-width: 1024px) {
     .container{
         margin: 0;
     }
-    
 }
 
-@media (max-width: 320px) {
 
-    .container{
-        margin: 0;
-    }
-    
-}

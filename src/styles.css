@@ -9,10 +9,14 @@
     font-family: 'Roboto', sans-serif;
     color: white;
     background: #000000;
+    border: none;
+}
+
+html{
+    overflow-x: hidden;
 }
 
 body{
-    max-width: 100vw;
     padding: 0;
     margin: 0;
 }
@@ -21,42 +25,50 @@ body{
     display: none;
 }
 
-@media (max-width: 1000px) {
+@media screen and (max-width: 320px) {
 
-    body{
-        padding: 0;
+    .container{
         margin: 0;
-        max-width: 100vw;
+        padding: 0;
     }
     
 }
 
-@media (max-width: 728px) {
+@media screen and (max-width: 480px) {
 
-    body{
-        padding: 0;
+    .container{
         margin: 0;
-        max-width: 100vw;
+        padding: 0;
     }
     
 }
 
-@media (max-width: 688px) {
+@media screen and (max-width: 768px) {
 
-    body{
-        padding: 0;
+    .container{
         margin: 0;
-        max-width: 100vw;
+        padding: 0;
     }
     
 }
 
-@media (min-width: 688px) {
+@media screen and (max-width: 960px) {
+
+    .container{
+        margin: 0;
+        padding: 0;
+    }
+    
+}
+
+@media screen and (max-width: 1024px) {
 
     body{
         padding: 0;
         margin: 0;
-        max-width: 100vw;
     }
     
 }
+
+
+
