@@ -8,6 +8,7 @@
     background-size: cover;
     filter: opacity(80%);
     min-height: 100vh;
+    padding-bottom: 4rem;
 }
 
 h1 {
@@ -49,7 +50,7 @@ h1 {
 }
 
 .card {
-    width: 15%;
+    width: 20%;
     height: 10rem;
     background-color: black;
     filter: opacity(80%);
@@ -130,6 +131,7 @@ svg {
 .title {
     font-size: 1.2rem;
     font-weight: bold;
+    color: green;
 }
 
 .links {
@@ -202,7 +204,7 @@ svg {
     }
 
     .card {
-        width: 25%;
+        width: 35%;
         margin: 1.5rem .5rem;
     }
 
