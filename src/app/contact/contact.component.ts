@@ -33,27 +33,41 @@ export class ContactComponent implements OnInit, OnDestroy {
         childClassName: 'notiflix-notify-success',
         notiflixIconColor: '#fff',
         fontAwesomeClassName: 'fas fa-check-circle',
-      }        
+      },
+      warning: {
+        background: '#000',
+        textColor: '#0f0',
+        childClassName: 'notiflix-notify-success',
+        notiflixIconColor: '#0f0',
+      }    
     });
   }
 
   sendEmail(){
-    Notiflix.Loading.circle('Enviando mensaje...', {
-      backgroundColor: '#000',
-      messageColor: 'white',
-      svgColor: '#fff',
-    });
-    this.email_body = this.data.value;
-    this.emailSubscription = this.contactService.sendMail(this.email_body).subscribe({
-      next: (res: any) =>{
-        Notiflix.Loading.remove(); 
-        Notiflix.Notify.success('Mensaje enviado', { position: 'center-center', width: '12rem', });
-        this.clearForm();
-      },
-      error: (err: any) => {
-        console.log(err);
-      }
-    }); 
+    if(this.verifyForm()){
+      Notiflix.Loading.standard();
+      this.email_body = this.data.value;
+      this.emailSubscription = this.contactService.sendMail(this.email_body).subscribe({
+        next: (res: any) =>{
+          Notiflix.Loading.remove(); 
+          Notiflix.Notify.success('Mensaje enviado', { position: 'center-center', width: '12rem', });
+          this.clearForm();
+        },
+        error: (err: any) => {
+          console.log(err);
+        }
+      }); 
+    }else{
+      Notiflix.Notify.warning('You must fill out all the fields', { position: 'center-center', });
+    }
+  }
+
+  verifyForm(){
+    const expression: RegExp = /^(?=.{1,254}$)(?=.{1,64}@)[-!#$%&'*+/0-9=?A-Z^_`a-z{|}~]+(\.[-!#$%&'*+/0-9=?A-Z^_`a-z{|}~]+)*@[A-Za-z0-9]([A-Za-z0-9-]{0,61}[A-Za-z0-9])?(\.[A-Za-z0-9]([A-Za-z0-9-]{0,61}[A-Za-z0-9])?)*$/;
+    if(expression.test(this.data.value.email) && this.data.value.message != '' && this.data.value.subject != ''){
+      return true;
+    }
+    return false;
   }
 
   clearForm(){
