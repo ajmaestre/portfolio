@@ -19,14 +19,10 @@ import { WorkComponent } from './work/work.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { SkillComponent } from './skill/skill.component';
-import { ConectComponent } from './svg/conect/conect.component';
-import { CloudComponent } from './svg/cloud/cloud.component';
-import { MovileComponent } from './svg/movile/movile.component';
-import { DesktopComponent } from './svg/desktop/desktop.component';
-import { DatabaseComponent } from './svg/database/database.component';
-import { GithubComponent } from './svg/github/github.component';
-import { WwwComponent } from './svg/www/www.component';
-import { WorldComponent } from './svg/world/world.component';
+import { LoginComponent } from './admin/login/login.component';
+import { AdminComponent } from './admin/admin.component';
+import { AdminNavComponent } from './admin/admin-nav/admin-nav.component';
+import { ProjectComponent } from './admin/project/project.component';
 
 @NgModule({
   declarations: [
@@ -38,14 +34,10 @@ import { WorldComponent } from './svg/world/world.component';
     AboutComponent,
     ContactComponent,
     SkillComponent,
-    ConectComponent,
-    CloudComponent,
-    MovileComponent,
-    DesktopComponent,
-    DatabaseComponent,
-    GithubComponent,
-    WwwComponent,
-    WorldComponent
+    LoginComponent,
+    AdminComponent,
+    AdminNavComponent,
+    ProjectComponent,
   ],
   imports: [
     BrowserModule,

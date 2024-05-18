@@ -1,256 +1,165 @@
-.container {
+
+.div-data{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-    padding: 4rem 12rem;
-    background: #242932;
-    background-size: cover;
-    min-height: 100vh;
-}
-
-h1 {
-    text-align: center;
-    font-size: 2rem;
-    padding: 0;
-    margin-bottom: 2rem;
-    background-color: transparent;
-}
-
-.contact-us-body {
-    width: auto;
-    height: auto;
-    display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: .5rem;
-    margin-bottom: 41px;
-    padding: .2rem;
-    border-radius: .5rem;
-    background-color: black;
-    filter: opacity(90%);
-    position: relative;
-    overflow: hidden;
-}
-
-.fondo {
-    z-index: -1;
-    position: absolute;
-    left: 0rem;
-    top: 0;
-    width: 100%;
-    height: 24rem;
-    background-color: rgb(100, 100, 100);
-    background: linear-gradient(180deg, rgb(1, 85, 97) 0%, rgba(1, 85, 97, 1) 35%, rgba(1, 85, 97, 1) 100%);
-    box-shadow: 0 0 20px rgb(50, 50, 50);
-    filter: blur(20px);
-    animation: rotat 10s infinite ease-in-out;
-}
-
-.contact-us-body .form-body {
-    width: 55rem;
-    height: auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     flex-direction: column;
-    box-shadow: 2rem 2rem 4rem #00000021;
-    padding: 16px;
-    border-radius: .5rem;
+    width: 34rem;
 }
 
-.links {
+.div-header-form{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
 }
 
-svg{
-    width: auto;
-    height: auto;
-}
-
-.links a {
-    margin-bottom: 1.5rem;
-    padding: 0;
-}
-
-.contacts {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.icon {
-    width: 2rem;
-    margin-right: 1rem;
-}
-
-.contact-us-body .form-body form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.contact-us-body .form-body form input {
-    margin: 2rem 1rem;
-    width: 18rem;
-    height: 2.3rem;
-    border-radius: .5rem;
-    border: none;
-    background: #afafaf;
-    font-size: larger;
+.div-header-form h4{
     font-weight: bold;
-    color: black;
-    padding: 0px 12px 0px 12px;
+    color: rgb(51, 51, 51);
+    font-size: 1rem;
+    padding: 1rem 0;
+    width: 100%;
+    text-align: left;
 }
 
-.contact-us-body .form-body form textarea {
-    margin: 0 2rem;
+.input{
     width: 100%;
+    height: 2.7rem;
+    margin: .5rem 0;
+    padding: 0 .5rem;
+    border: .1rem solid rgb(197, 197, 197);
+    border-radius: .2rem;
+}
+
+#msg{
     height: 10rem;
-    border-radius: .5rem;
-    border: none;
-    background: #afafaf;
-    font-size: larger;
-    font-weight: bold;
-    color: black;
-    padding: 1rem;
+    padding: .5rem;
 }
 
-.contact-us-body .form-body form button {
-    margin: 2rem 0;
-    width: 15rem;
+.hr{
+    width: 100%;
+    margin: 1rem 0;
+    border: .1rem solid rgb(228, 227, 227);
+}
+
+.group-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 34rem;
+}
+
+.div-btn{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: row;
+    width: inherit;
+}
+
+.btn-next{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
     height: 2.4rem;
-    border-radius: .5rem;
-    background: green;
-    font-size: larger;
+    margin: .5rem 0;
+    padding: 0 2rem;
+    border: .1rem solid rgb(0, 0, 0);
+    background: #242932;;
+    color: white;
     font-weight: bold;
-    cursor: pointer;
-    color: aliceblue;
-    transition: 1s;
-    border: none;
-}
-
-.contact-us-body .form-body form button:hover {
-    background: rgb(8, 63, 71);
-    transform: scale(.9);
-}
-
-.tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-}
-
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: blue;
-    color: #fff;
-    font-weight: bold;
+    font-size: .8rem;
+    border-radius: .2rem;
+    text-decoration: none;
     text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 25%;
-    left: -150%;
-    margin-left: -60px;
-    opacity: 0;
-    transition: opacity 0.3s;
+    transition: .5s;
 }
 
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
-}
-
-@keyframes rotat {
-    100% {
-        transform: rotate(-360deg);
-    }
+.btn-next:hover{
+    cursor: pointer;
+    color: #242932;
+    background-color: rgb(204, 163, 88);
+    border: .1rem solid rgb(204, 163, 88);
 }
 
 @media screen and (max-width: 320px) {
-    .container{
-        margin: 0;
-    } 
+    
 }
 
 @media screen and (max-width: 480px) {
-    .container{
-        margin: 0;
-    }   
+
+    .div-data{
+        width: 20rem;
+    }
+
+    .div-header-form{
+        align-items: center;
+        width: 20rem;
+    }
+    
+    .div-header-form h4{
+        width: 100%;
+    }
+    
+    .input{
+        width: 100%;
+    }
+
+    .hr{
+        width: 100%;
+    }
+
+    .group-button{
+        width: 20rem;
+    }
+
+    .div-btn{
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
 
-    .container {
-        padding: 2rem 0;
-    }
-
-    h1 {
-        margin-bottom: 1.5rem;
-        font-size: 1.5rem;
-    }
-
-    .contact-us-body .form-body {
+    .div-data{
         width: 20rem;
-        height: auto;
-        display: flex;
-        justify-content: center;
+    }
+
+    .div-header-form{
         align-items: center;
-        flex-direction: column;
-        box-shadow: 2rem 2rem 4rem #00000021;
-        padding: 16px;
-        border-radius: .5rem;
+        width: 20rem;
+    }
+    
+    .div-header-form h4{
+        width: 100%;
+    }
+    
+    .input{
+        width: 100%;
     }
 
-    .links {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
+    .hr{
+        width: 100%;
     }
 
-    .tooltip:hover .tooltiptext {
-        visibility: hidden;
-        opacity: 1;
+    .group-button{
+        width: 20rem;
     }
 
-    .contact-us-body .form-body form input {
-        margin: .5rem 0;
-        width: 18rem;
-        height: 2.3rem;
-        border-radius: .5rem;
-        border: none;
-        background: #afafaf;
-        font-size: larger;
-        font-weight: bold;
-        color: black;
-        padding: 0px 12px 0px 12px;
-    }
-
-    .contact-us-body .form-body form textarea {
-        margin: 0;
-        margin-top: .5rem;
+    .div-btn{
         width: 100%;
     }
 
 }
 
 @media screen and (max-width: 960px) {
-    .container{
-        margin: 0;
-    }  
+
 }
 
 @media screen and (max-width: 1024px) {
-    .container{
-        margin: 0;
-    }
+    
 }

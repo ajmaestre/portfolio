@@ -1,0 +1,97 @@
+
+.container-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.page{
+    background-color: white;
+    padding: 2rem;
+    border-radius: .2rem;
+    border: .1rem solid rgb(228, 227, 227);
+}
+
+.div-data{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 34rem;
+}
+
+.div-header-form{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.div-header-form h4{
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+    font-size: 1rem;
+    padding: 1rem 0;
+    width: 100%;
+    text-align: left;
+}
+
+.input{
+    width: 100%;
+    height: 2.7rem;
+    margin: .5rem 0;
+    padding: 0 .5rem;
+    border: .1rem solid rgb(197, 197, 197);
+    border-radius: .2rem;
+}
+
+.hr{
+    width: 100%;
+    margin: 1rem 0;
+    border: .1rem solid rgb(228, 227, 227);
+}
+
+.group-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 34rem;
+}
+
+.div-btn{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: row;
+    width: inherit;
+}
+
+.btn-next{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 2.4rem;
+    margin: .5rem 0;
+    padding: 0 2rem;
+    border: .1rem solid rgb(0, 0, 0);
+    background: #242932;;
+    color: white;
+    font-weight: bold;
+    font-size: .8rem;
+    border-radius: .2rem;
+    text-decoration: none;
+    text-align: center;
+    transition: .5s;
+}
+
+.btn-next:hover{
+    cursor: pointer;
+    color: #242932;
+    background-color: rgb(204, 163, 88);
+    border: .1rem solid rgb(204, 163, 88);
+}

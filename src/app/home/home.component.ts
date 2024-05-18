@@ -8,7 +8,17 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class HomeComponent implements OnInit {
 
+  menu: string = "div-image show";
+
   constructor(private translate: TranslateService) { 
+  }
+
+  showMenu(){
+    if(this.menu == 'div-image'){
+      this.menu = 'div-image show';
+    }else{
+      this.menu = 'div-image';
+    }
   }
 
   ngOnInit(): void {

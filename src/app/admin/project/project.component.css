@@ -1,0 +1,246 @@
+
+.container-project{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 45rem;
+    height: 100vh;
+}
+
+.div-project{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    width: 14rem;
+    height: auto;
+    padding: 1.5rem 2rem;
+    margin: .5rem;
+    border: .15rem solid rgb(228, 227, 227);
+    cursor: pointer;
+    transition: .5s;
+    border-radius: .2rem;
+}
+
+.div-project:hover{
+    background-color: rgb(204, 163, 88);
+}
+
+.div-project:hover .menu{
+    display: block;
+}
+
+.project{
+    background-color: #242932;
+}
+
+.project:hover .div-header-form h4{
+    color: #242932;
+}
+
+.project .div-header-form h4{
+    font-weight: bold;
+    color: rgb(204, 163, 88);
+    font-size: 1rem;
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+}
+
+.div-header-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.div-header-form h4{
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+    font-size: 1rem;
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+}
+
+.container-modal{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    margin: 0;
+    padding: 5rem;
+    height: 85%;
+}
+
+.div-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.image {
+    position: relative;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: rgb(119, 119, 119);
+}
+
+.image i {
+    font-size: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.file-box {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    display: inline-block;
+    background: url(../../../assets/images/edit.png);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.file-box:hover{
+    background: url(../../../assets/images/edit-2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.file-box::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.file-box input[type="file"] {
+    opacity: 0;
+    width: 3rem;
+    height: 3rem;
+    display: inline-block;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.div-data{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 34rem;
+}
+
+.input{
+    width: 100%;
+    height: 2.7rem;
+    margin: .5rem 0;
+    padding: 0 .5rem;
+    border: .1rem solid rgb(197, 197, 197);
+    border-radius: .2rem;
+}
+
+.group-input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+}
+
+.group-textarea{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+}
+
+.input-g{
+    width: 48%;
+}
+
+#msg{
+    width: 48%;
+    height: 8rem;
+    padding: .5rem;
+}
+
+.hr{
+    width: 100%;
+    margin: 1rem 0;
+    border: .1rem solid rgb(228, 227, 227);
+}
+
+.group-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 34rem;
+}
+
+.div-btn{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: row;
+    width: inherit;
+}
+
+.btn-next{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 2.4rem;
+    margin: .5rem 0;
+    padding: 0 2rem;
+    border: .1rem solid rgb(0, 0, 0);
+    background: #242932;;
+    color: white;
+    font-weight: bold;
+    font-size: .8rem;
+    border-radius: .2rem;
+    text-decoration: none;
+    text-align: center;
+    transition: .5s;
+}
+
+.btn-next:hover{
+    cursor: pointer;
+    color: #242932;
+    background-color: rgb(204, 163, 88);
+    border: .1rem solid rgb(204, 163, 88);
+}

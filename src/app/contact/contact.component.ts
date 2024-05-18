@@ -5,6 +5,7 @@ import { ContactService } from './contact.service';
 import { Subscription } from 'rxjs';
 import { IEmail } from '../interfaces/IEmail';
 import { TranslateService } from '@ngx-translate/core';
+import { IsAuth } from '../interfaces/isAuth';
 
 @Component({
   selector: 'app-contact',
@@ -15,6 +16,7 @@ export class ContactComponent implements OnInit, OnDestroy {
 
   data: FormGroup;
   emailSubscription!: Subscription;
+  isConectedSubcription!: Subscription;
   email_body!: IEmail;
 
   constructor(private contactService: ContactService, private translate: TranslateService) { 
@@ -26,9 +28,11 @@ export class ContactComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
+    this.isConected();
+    window.addEventListener('scroll', this.scrollEvent, true);
     Notiflix.Notify.init({
       success: {
-        background: '#000',
+        background: '#242932',
         textColor: '#fff',
         childClassName: 'notiflix-notify-success',
         notiflixIconColor: '#fff',
@@ -36,10 +40,27 @@ export class ContactComponent implements OnInit, OnDestroy {
       },
       warning: {
         background: '#000',
-        textColor: '#0f0',
+        textColor: '#cca358',
         childClassName: 'notiflix-notify-success',
-        notiflixIconColor: '#0f0',
+        notiflixIconColor: '#cca358',
       }    
+    });
+  }
+
+  scrollEvent = () => {
+    const sections = document.querySelectorAll('.page');
+    const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+
+    sections.forEach(section => {
+      const sectionTop = section.getBoundingClientRect().top + window.pageYOffset;
+      const sectionId = section.getAttribute('id');
+      const link = document.querySelector(`[fragment="${sectionId}"]`);
+
+      if (link && sectionTop <= scrollPosition && sectionTop + section.clientHeight > scrollPosition) {
+        const links = document.querySelectorAll('ul li a');
+        links.forEach(lk => lk.classList.remove('active'));
+        link.classList.add('active');
+      }
     });
   }
 
@@ -62,6 +83,13 @@ export class ContactComponent implements OnInit, OnDestroy {
     }
   }
 
+  isConected(){
+    this.isConectedSubcription = this.contactService.isAuth().subscribe({
+      next: (res: IsAuth) => {},
+      error: (err: any) => { console.log(err) }
+    });
+  }
+
   verifyForm(){
     const expression: RegExp = /^(?=.{1,254}$)(?=.{1,64}@)[-!#$%&'*+/0-9=?A-Z^_`a-z{|}~]+(\.[-!#$%&'*+/0-9=?A-Z^_`a-z{|}~]+)*@[A-Za-z0-9]([A-Za-z0-9-]{0,61}[A-Za-z0-9])?(\.[A-Za-z0-9]([A-Za-z0-9-]{0,61}[A-Za-z0-9])?)*$/;
     if(expression.test(this.data.value.email) && this.data.value.message != '' && this.data.value.subject != ''){
@@ -80,6 +108,8 @@ export class ContactComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.emailSubscription.unsubscribe();
+    this.isConectedSubcription.unsubscribe();
+    window.removeEventListener('scroll', this.scrollEvent, true);
   }
 
 }

@@ -1,46 +1,10 @@
-<div class="nav" data-aos="fade-down">
 
-    <div class="logo">
-        <h2>AJMaster</h2>
-        <a (click)="showMenu()">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44"
-                xmlns:xlink="http://www.w3.org/1999/xlink" fill="white" class="icon">
-                <path
-                    d="m22,0c-12.2,0-22,9.8-22,22s9.8,22 22,22 22-9.8 22-22-9.8-22-22-22zm12,31c0,0.6-0.4,1-1,1h-22c-0.6,0-1-0.4-1-1v-2c0-0.6 0.4-1 1-1h22c0.6,0 1,0.4 1,1v2zm0-8c0,0.6-0.4,1-1,1h-22c-0.6,0-1-0.4-1-1v-2c0-0.6 0.4-1 1-1h22c0.6,0 1,0.4 1,1v2zm0-8c0,0.6-0.4,1-1,1h-22c-0.6,0-1-0.4-1-1v-2c0-0.6 0.4-1 1-1h22c0.6,0 1,0.4 1,1v2z" />
-            </svg>
-        </a>
-    </div>
-
-    <div [class]="menu">
-        <a [routerLink]='"."' fragment="home" routerLinkActive="active">
-            {{"Home" | translate}}
-        </a>
-        <a [routerLink]='"."' fragment="work" routerLinkActive="active">
-            {{"Work" | translate}}
-        </a>
-        <a [routerLink]='"."' fragment="about" routerLinkActive="active">
-            {{"About" | translate}}
-        </a>
-        <a [routerLink]='"."' fragment="skill" routerLinkActive="active">
-            {{"Skill" | translate}}
-        </a>
-        <a [routerLink]='"."' fragment="contact" routerLinkActive="active">
-            {{"Contact" | translate}}
-        </a>
-    </div>
-
-    <div class="setting">
-        <div class="lang">
-           <a (click)="showSubMenu()">{{"lang" | translate}}</a>
-        </div>
-        <ul [class]="submenu">
-            <li class="li">
-                <a (click)="changeLanguaje('es')">{{"lang-es" | translate}}</a>
-            </li>
-            <li class="li">
-                <a (click)="changeLanguaje('en')">{{"lang-en" | translate}}</a>
-            </li>
-        </ul>
-    </div>
-
+<div class="nav">
+    <ul>
+        <li><a fragment="home" (click)="scrollTo($event)" class="active"><hr>Inicio</a></li>
+        <li><a fragment="work" (click)="scrollTo($event)"><hr>Proyectos</a></li>
+        <li><a fragment="about" (click)="scrollTo($event)"><hr>Sobre mí</a></li>
+        <li><a fragment="skill" (click)="scrollTo($event)"><hr>Habilidades</a></li>
+        <li><a fragment="contact" (click)="scrollTo($event)"><hr>Contacto</a></li>
+    </ul>
 </div>

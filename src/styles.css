@@ -6,23 +6,12 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    background: #000000;
-    border: none;
-}
-
-html{
-    overflow-x: hidden;
+    font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body{
     padding: 0;
     margin: 0;
-}
-
-::-webkit-scrollbar{
-    display: none;
 }
 
 @media screen and (max-width: 320px) {

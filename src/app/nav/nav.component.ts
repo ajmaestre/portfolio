@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -8,10 +8,7 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class NavComponent implements OnInit {
 
-  menu: string = 'pages show';
-  submenu: string = 'ul';
-
-  constructor(private translate: TranslateService) { 
+  constructor(private translate: TranslateService, private el: ElementRef) { 
     translate.setDefaultLang('es');
     translate.use('es');
   }
@@ -24,22 +21,18 @@ export class NavComponent implements OnInit {
     this.translate.use(lang);
   }
 
-  showMenu(){
-    if(this.menu == 'pages'){
-      this.menu = 'pages show';
-      this.submenu = 'ul';
-    }else{
-      this.menu = 'pages';
-      this.submenu = 'ul show-submenu';
+  scrollTo(event: MouseEvent) {
+    const target = event.target as HTMLAnchorElement;
+    const fragment = target.getAttribute('fragment');
+    if (fragment) {
+      const element = document.getElementById(fragment);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     }
-  }
-
-  showSubMenu(){
-    if(this.submenu == 'ul'){
-      this.submenu = 'ul show-submenu';
-    }else{
-      this.submenu = 'ul';
-    }
+    const links = document.querySelectorAll('ul li a');
+    links.forEach(link => link.classList.remove('active'));
+    target.classList.add('active');
   }
 
 }

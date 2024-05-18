@@ -1,0 +1,59 @@
+
+<div class="container-project">
+    
+    <div class="div-project" (click)="showModalProject(-1)">
+        <div class="div-header-form">
+            <h4>Registrar proyecto</h4>
+        </div>
+    </div>
+
+    <div class="div-project project" *ngFor="let project of listProject"  (click)="showModalProject(project?.id)">
+        <div class="div-header-form">
+            <h4>{{project.name}}</h4>
+        </div>
+    </div>
+
+</div>
+
+<div class="container-modal">
+    
+    <form [formGroup]="data" class="page">
+        <div class="div-header-form">
+            <h4>Proyecto</h4>
+        </div>
+
+        <div class="div-body">
+            <div class="div-image">
+                <div class="image">
+                    <img [src]="imageUrl" *ngIf="project.image" alt="" class="photo">
+                    <i class="fas fa-user photo" *ngIf="!project.image"></i>
+                    <div class="file-box" id="file-img" >
+                        <input type="file" name="file-img" aria-label="Cambiar foto" (change)="onLoad($event)">
+                    </div>
+                </div>
+            </div>
+        
+            <div class="div-data">
+                <input class="input" type="text" name="name" id="" required placeholder="Nombre" formControlName="name">
+                <div class="group-textarea">
+                    <textarea class="input" name="description" id="msg" placeholder="Descripción" formControlName="description"></textarea>
+                    <textarea class="input" name="skills" id="msg" placeholder="Skills" formControlName="skills">   </textarea>
+                </div>
+                <input class="input" type="text" name="site" id="" required placeholder="Sitio" formControlName="site">
+                <div class="group-input">
+                    <input class="input input-g" type="text" name="front" id="" required placeholder="Front" formControlName="front">
+                    <input class="input input-g" type="text" name="back" id="" required placeholder="Back" formControlName="back">
+                </div>
+                <input class="input" type="text" name="image" id="" required placeholder="Imagen" formControlName="image">
+                <hr class="hr">
+            </div>
+        </div>
+
+        <div class="group-button">
+            <div class="div-btn div-btn-next">
+                <input type="button" id="btnNext" class="btn-next" value="Enviar">
+            </div>
+        </div>
+    </form>
+
+</div>

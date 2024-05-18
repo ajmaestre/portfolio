@@ -1,191 +1,90 @@
-.nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 5rem;
-    padding: 0;
-    margin: 0;
-    background: black;
-    filter: opacity(80%);
-    min-width: 100vw;
+
+ul{
+    color: white;
+    width: 25rem;
+    list-style-type: none;
 }
 
-.pages {
-    padding: 0 3rem;
+ul li{
+    list-style: none;
+    margin: 1rem 0;
+}
+
+ul li a {
+    position: relative;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
     flex-direction: row;
-    background: transparent;
-}
-
-.logo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-h2 {
-    font-size: 1.5rem;
-    background: transparent;
-}
-
-.icon{
-    display: none;
-}
-
-.ul{
-    position: absolute;
-    display: none;
     align-items: center;
     justify-content: flex-start;
-    flex-direction: column;
-    top: 5rem;
-    padding: 1rem;
-    border: .1rem solid rgb(10, 85, 97);
-}
-
-.li{
-    list-style: none;
-    margin-top: 1rem;
-}
-
-a {
     text-decoration: none;
-    font-weight: bold;
     cursor: pointer;
     transition: .5s;
     background: transparent;
     margin: 0 .5rem;
+    color: white;
+    font-size: .8rem;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-a:hover {
-    color: green;
+ul li a hr{
+    width: 3rem;
+    height: 0;
+    margin-right: 1rem;
+    border: .01rem solid white;
+    transition: .5s;
 }
 
-.active{
-    color: rgb(35, 202, 35);
+ul li .active{
+    color: #cca358;
 }
 
-.setting {
-    width: 10%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: 1s;
-    background: transparent;
+ul li .active hr{
+    border: .01rem solid rgb(204, 163, 88);
+    width: 10rem;
 }
 
-.setting a {
-    margin-right: 2rem;
+ul li a:hover{
+    color: rgb(204, 163, 88);
 }
 
-.show{
-    display: block;
-}
-
-.show-submenu{
-    display: block;
+ul li a:hover hr{
+    border: .01rem solid rgb(204, 163, 88);
+    width: 10rem;
 }
 
 @media screen and (max-width: 320px) {
-    .nav{
-        margin: 0;
-    }
+
 }
 
 @media screen and (max-width: 480px) {
-    .nav{
-        margin: 0;
+
+    ul li a {
+        justify-content: center;
     }
+    
+    ul li a hr{
+        display: none;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
 
-    .nav {
-        justify-content: center;
-        flex-direction: column;
-        height: auto;
-        padding: 1rem;
-        padding-bottom: 0;
-    }
-
-    .pages {
-        width: auto;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .show{
-        display: none;
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-
-    .logo{
-        width: 100%;
-        margin-bottom: 0;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: row;
-    }
-
-    h2 {
-        font-size: 1.3rem;
-        height: 2rem;
-    }
-
-    .icon{
-        display: block;
-        width: 2rem;
-    }
-
-    .setting {
-        flex-direction: column;
-        margin-top: .5rem;
-        padding-top: 1rem;
-    }
-    
-    .lang{
-        display: none;
-    }
-
-    .setting a {
-        margin: 0;
-        margin-bottom: .6rem;
-    }
-
-    a{
-        margin-bottom: .6rem;
-    }
-
-    .ul{
-        position: relative;
-        display: none;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        padding: 1rem;
-        top: -1rem;
-        border: none;
-    }
-
-    .show-submenu{
-        display: flex;
-    }
-
 }
 
 @media screen and (max-width: 960px) {
-    .nav{
-        margin: 0;
-    }
+
 }
 
 @media screen and (max-width: 1024px) {
-    .nav{
-        margin: 0;
+    
+    ul li a {
+        justify-content: center;
     }
+    
+    ul li a hr{
+        display: none;
+    }
+
 }

@@ -1,0 +1,20 @@
+
+<div class="container-login">
+    <form class="page" [formGroup]="data">
+        <div class="div-header-form">
+            <h4>Administrador</h4>
+        </div>
+        
+        <div class="div-data">
+            <input class="input" type="text" name="Username" id="user" required placeholder="Nombre de usuario" formControlName="username">
+            <input class="input" type="password" name="Password" id="pass" required placeholder="Password" formControlName="password">
+            <hr class="hr">
+        </div>
+    
+        <div class="group-button">
+            <div class="div-btn div-btn-next">
+                <input type="button" id="btnNext" class="btn-next" value="Ingresar" (click)="getSession()">
+            </div>
+        </div>
+    </form>
+</div>
