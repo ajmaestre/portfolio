@@ -13,8 +13,7 @@ const routesOptions: ExtraOptions = {
 }
 
 const routes: Routes = [
-                        { path: '', redirectTo: 'home', pathMatch: 'full' },
-                        { path: 'home', component: HomeComponent },
+                        { path: '', component: HomeComponent },
                         { path: 'login', component: LoginComponent },
                         { path: 'admin', component: AdminComponent, canActivate: [AuthGuardGuard] },
                         { path: '**', redirectTo: 'home' }
