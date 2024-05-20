@@ -1,0 +1,33 @@
+
+
+{
+    "lang": "Idioma",
+    "lang-es": "Español",
+    "lang-en": "Inglés",
+    "title": "Desarrollador Fullstack",
+    "resume-1": "Hola, soy Alexander Maestre, un apasionado desarrollador Fullstack con experiencia destacada en la creación de interfaces web cautivadoras y altamente funcionales.",
+    "resume-2": "Mi enfoque se centra en fusionar diseño y tecnología para ofrecer experiencias de usuario excepcionales. Con habilidades sólidas en el desarrollo frontend y backend, tengo la capacidad de llevar proyectos desde la conceptualización hasta la implementación con un alto estándar de calidad.",
+    "Home": "Inicio",
+    "Work": "Proyectos",
+    "About": "Sobre mí",
+    "Skill": "Habilidades",
+    "Contact": "Contacto",
+    "title-project": "Proyectos",
+    "coffeeapp-description": "Una aplicación web donde se aplica CRISP DM para el desarrollo de un modelo de predicción para la producción de café en Colombia.",
+    "frontendapp-description": "Una aplicación web para ofrecer servicios de maquetación de páginas web, con diseño adaptativo a diferentes dispositivos y una vista amigable.",
+    "nominaapp-description": "Una aplicación simple que permite simular la nómina de los docentes vinculados a la universidad Popular del Cesar.",
+    "travelapp-description": "Una aplicación web que simula una plataforma para brindar servicios de viajes alrededor del mundo.",
+    "restryapp-description": "Una aplicación web simple diseñada para probar y validar respuestas de API REST. Esta aplicación proporciona una interfaz intuitiva que permite enviar solicitudes HTTP a una API REST específica y visualizar las respuestas devueltas.",
+    "reserhabapp-description": "Una plataforma web para la reserva de habitaciones en la ciudad de Valledupar en Colombia.",
+    "portfolioapp-description": "Este es mi portfolio y esta desarrollado en el framework Angular. Aquí, te invito a explorar los proyectos en los que he trabajado, demostrando mi habilidad para crear experiencias de usuario impactantes.",
+    "title-about": "Sobre mí",
+    "label-about": "Perfil",
+    "profile-about-one": "Soy Alexander Maestre, un entusiasta estudiante de ingeniería de sistemas con una pasión por el desarrollo de software y un enfoque especializado en la creación de interfaces web atractivas y funcionales. Con sólidos conocimientos en HTML, CSS, y JavaScript, así como experiencia en los Frameworks Bootstrap y Angular, estoy preparado para ofrecer soluciones web innovadoras y adaptadas a las necesidades del usuario.",
+    "profile-about-two": "Además, cuento con experiencia en el desarrollo de aplicaciones utilizando Java, NodeJS con Express y NestJs, así como en el manejo de bases de datos como MySQL, Oracle, MongoDB, y PostgreSQL. Mi objetivo es aplicar mis habilidades técnicas para diseñar y desarrollar experiencias de usuario de alta calidad, centrándome en la usabilidad y la eficiencia. Estoy emocionado por seguir aprendiendo y creciendo en el campo del desarrollo de software para contribuir al éxito de proyectos innovadores y desafiantes.",
+    "title-skill": "Habilidades",
+    "title-contact": "Contáctame",
+    "btn-submit": "Enviar",
+    "foot-about-title": "Sobre mí",
+    "foot-about-description": "Yo soy un desarrollador Fullstack con un enfoque especializado en la creación de interfaces webatractivas y funcionales.",
+    "foot-contact-title": "Contáctame"
+}
