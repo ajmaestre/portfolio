@@ -24,13 +24,13 @@
 
 .div-project .div-header{
     width: 10rem;
-    height: auto;
+    height: 2rem;
 }
 
 .div-project .div-header h4{
     color: rgb(31, 31, 31);
     font-size: .8rem;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 
 .div-project .body{
