@@ -23,13 +23,13 @@
 }
 
 .div-project .div-header{
-    width: 10rem;
+    min-width: 10rem;
     height: 2rem;
 }
 
 .div-project .div-header h4{
     color: rgb(31, 31, 31);
-    font-size: .8rem;
+    font-size: .7rem;
     text-transform: uppercase;
 }
 
