@@ -22,12 +22,12 @@
     display: block;
 }
 
-.div-project .header{
+.div-project .div-header{
     width: 10rem;
     height: auto;
 }
 
-.div-project .div-header-form h4{
+.div-project .div-header h4{
     color: rgb(31, 31, 31);
     font-size: .8rem;
     text-transform: capitalize;
