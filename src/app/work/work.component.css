@@ -154,6 +154,25 @@
     transition: .5s;
 }
 
+.div-project .menu a .skill-front {
+    background-color: transparent;
+    color: #242932;
+    border: .1rem solid #242932;
+}
+
+.div-project .menu a .skill-back {
+    background-color: transparent;
+    color: #242932;
+}
+
+.div-project .menu a:hover .skill-front{
+    background-color: rgb(88, 62, 14);
+}
+
+.div-project .menu a:hover .skill-back{
+    border: .1rem solid #242932;
+}
+
 @media screen and (max-width: 320px) {
     
 }
