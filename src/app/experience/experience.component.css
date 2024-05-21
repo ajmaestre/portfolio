@@ -23,7 +23,7 @@
 }
 
 .div-project .div-header-form{
-    width: 10rem;
+    width: auto;
     height: auto;
 }
 
@@ -106,7 +106,7 @@
 }
 
 .div-project .body .div-text-body p{
-    line-height: .9rem;
+    line-height: 1.2rem;
     font-size: .95rem;
     color: #242932;
 }
@@ -140,6 +140,7 @@
 }
 
 .div-project .menu a{
+    margin: 0 1rem;
     text-decoration: none;
     cursor: pointer;
 }
