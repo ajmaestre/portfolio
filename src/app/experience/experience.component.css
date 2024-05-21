@@ -30,6 +30,7 @@
 .div-project .div-header-form h4{
     color: rgb(31, 31, 31);
     font-size: .8rem;
+    text-transform: capitalize;
 }
 
 .div-project .body{
