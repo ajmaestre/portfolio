@@ -142,6 +142,13 @@
     height: auto;
 }
 
+.div-container-page .div-experience{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
 .div-container-page .div-projects{
     display: flex;
     align-items: center;

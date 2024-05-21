@@ -22,17 +22,9 @@
     display: block;
 }
 
-.div-project .div-project-image{
-    width: auto;
-    height: inherit;
-    background-size: cover;
-    padding: 1.5rem .5rem;
-}
-
-.div-project .div-project-image .div-img{
-    width: 10rem;
-    height: 5rem;
-    border-radius: .2rem;
+.div-project .div-header-form h4{
+    color: rgb(31, 31, 31);
+    font-size: .8rem;
 }
 
 .div-project .div-project-image .div-img-1{

@@ -23,6 +23,7 @@ import { LoginComponent } from './admin/login/login.component';
 import { AdminComponent } from './admin/admin.component';
 import { AdminNavComponent } from './admin/admin-nav/admin-nav.component';
 import { ProjectComponent } from './admin/project/project.component';
+import { ExperienceComponent } from './experience/experience.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { ProjectComponent } from './admin/project/project.component';
     AdminComponent,
     AdminNavComponent,
     ProjectComponent,
+    ExperienceComponent,
   ],
   imports: [
     BrowserModule,
