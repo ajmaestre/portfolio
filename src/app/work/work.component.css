@@ -7,7 +7,7 @@
     flex-direction: row;
     width: auto;
     height: auto;
-    padding: 1.5rem 2rem;
+    padding: 2rem;
     border-bottom: .15rem solid rgb(228, 227, 227);
     cursor: pointer;
     transition: .5s;
