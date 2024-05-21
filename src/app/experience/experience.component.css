@@ -7,7 +7,7 @@
     flex-direction: row;
     width: auto;
     height: auto;
-    padding: 1.5rem 2rem;
+    padding: 2rem;
     border-bottom: .15rem solid rgb(228, 227, 227);
     cursor: pointer;
     transition: .5s;
@@ -22,7 +22,7 @@
     display: block;
 }
 
-.div-project .div-header-form{
+.div-project .header{
     width: 10rem;
     height: auto;
 }
@@ -30,36 +30,6 @@
 .div-project .div-header-form h4{
     color: rgb(31, 31, 31);
     font-size: .8rem;
-}
-
-.div-project .div-project-image .div-img-1{
-    background-image: url('../../assets/images/cafe.jpg');
-    background-size: cover;
-}
-
-.div-project .div-project-image .div-img-2{
-    background-image: url('../../assets/images/home.png');
-    background-size: cover;
-}
-
-.div-project .div-project-image .div-img-3{
-    background-image: url('../../assets/images/city.jpg');
-    background-size: cover;
-}
-
-.div-project .div-project-image .div-img-4{
-    background-image: url('../../assets/images/budget.jpg');
-    background-size: cover;
-}
-
-.div-project .div-project-image .div-img-5{
-    background-image: url('../../assets/images/account.png');
-    background-size: cover;
-}
-
-.div-project .div-project-image .div-img-6{
-    background-image: url('../../assets/images/restry.png');
-    background-size: cover;
 }
 
 .div-project .body{
@@ -106,7 +76,7 @@
 }
 
 .div-project .body .div-text-body p{
-    line-height: 1.2rem;
+    line-height: 1.5rem;
     font-size: .95rem;
     color: #242932;
 }
@@ -140,7 +110,7 @@
 }
 
 .div-project .menu a{
-    margin: 0 1rem;
+    margin: 0 .5rem;
     text-decoration: none;
     cursor: pointer;
 }
