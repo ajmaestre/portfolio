@@ -23,7 +23,7 @@
 }
 
 .div-project .div-header-form{
-    width: auto;
+    width: 10rem;
     height: auto;
 }
 
@@ -152,6 +152,7 @@
 
 .div-project .menu a .skill{
     background-color: #242932;
+    border: .1rem solid #242932;
     color: white;
     font-weight: bold;
     font-size: .7rem;
@@ -166,11 +167,13 @@
 
 .div-project .menu a .skill-back {
     background-color: transparent;
+    border: .1rem solid rgb(204, 163, 88);
     color: #242932;
 }
 
 .div-project .menu a:hover .skill-front{
     background-color: rgb(88, 62, 14);
+    color: rgb(204, 163, 88);
 }
 
 .div-project .menu a:hover .skill-back{

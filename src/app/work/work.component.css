@@ -109,7 +109,7 @@
 }
 
 .div-project .body .div-text-body p{
-    line-height: 1.2rem;
+    line-height: 1.5rem;
     font-size: .95rem;
     color: #242932;
 }
@@ -145,7 +145,7 @@
 .div-project .menu a{
     text-decoration: none;
     cursor: pointer;
-    margin: 0 1rem;
+    margin: 0 .5rem;
 }
 
 .div-project .menu a:hover .skill{
@@ -170,7 +170,7 @@
 
 .div-project .menu a .skill-back {
     background-color: transparent;
-    border: .1rem solid transparent;
+    border: .1rem solid rgb(204, 163, 88);
     color: #242932;
 }
 
@@ -180,7 +180,7 @@
 }
 
 .div-project .menu a:hover .skill-back{
-    border: .2rem solid #242932;
+    border: .1rem solid #242932;
 }
 
 @media screen and (max-width: 320px) {
